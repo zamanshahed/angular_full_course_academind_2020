@@ -1,0 +1,1 @@
+# angular_full_course_academind_2020
