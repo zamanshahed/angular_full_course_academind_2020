@@ -1,10 +1,10 @@
 <p>Component:servers works!</p>
 <!-- Property Binding -->
-<button class="btn btn-primary" [disabled] = "!allowNewServer" >  
+<button class="btn btn-primary" [disabled] = "!allowNewServer" (click)="onCreateServer()" >  
     Add Server
 </button>
 <h4>
     Online Status: {{ allowNewServer }}
 </h4>
-<p>Server Loading...</p><p [innerText]="allowNewServer"></p>
+<p>{{ serverCreationStatus }}</p>
 <app-server></app-server>
