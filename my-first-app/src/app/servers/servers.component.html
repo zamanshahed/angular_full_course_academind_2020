@@ -10,8 +10,26 @@
 <button class="btn btn-primary" [disabled] = "!allowNewServer" (click)="onCreateServer()" >  
     Add Server
 </button>
+
+<BR>
+
+<label >User Name</label>
+<input 
+    type="text" 
+    class="form-control"
+    (input)="OnUpdateUserName($event)"
+>
+<!-- <button class="btn btn-primary" [disabled] = "!allowNewServer" (click)="onCreateUser()" >  
+    Add User
+</button>
+<hr> -->
+<button class="btn btn-primary" [disabled] = "!allowNewServer" (click)="OnResetUserName()" >  
+    Reset User
+</button>
+
 <h4>
     Online Status: {{ allowNewServer }}
 </h4>
 <p>{{ serverCreationStatus }}</p> <p>{{ serverName }}</p>
+<p>{{ userCreationStatus }}</p> <p>{{ userName }}</p>
 <app-server></app-server>
