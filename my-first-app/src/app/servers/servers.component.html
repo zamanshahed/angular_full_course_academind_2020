@@ -1,10 +1,17 @@
 <p>Component:servers works!</p>
+
 <!-- Property Binding -->
+<label >Server Name</label>
+<input 
+    type="text" 
+    class="form-control"
+    (input)="OnUpdateServerName($event)"
+>
 <button class="btn btn-primary" [disabled] = "!allowNewServer" (click)="onCreateServer()" >  
     Add Server
 </button>
 <h4>
     Online Status: {{ allowNewServer }}
 </h4>
-<p>{{ serverCreationStatus }}</p>
+<p>{{ serverCreationStatus }}</p> <p>{{ serverName }}</p>
 <app-server></app-server>
