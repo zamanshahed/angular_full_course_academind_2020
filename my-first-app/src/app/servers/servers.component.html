@@ -23,7 +23,7 @@
     Add User
 </button>
 <hr> -->
-<button class="btn btn-primary" [disabled] = "!allowNewServer" (click)="OnResetUserName()" >  
+<button class="btn btn-primary" [disabled] = "userName === ''" (click)="OnResetUserName()" >  
     Reset User
 </button>
 

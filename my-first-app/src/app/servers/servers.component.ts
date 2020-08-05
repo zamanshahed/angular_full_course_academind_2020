@@ -40,7 +40,7 @@ export class ServersComponent implements OnInit {
  
   OnResetUserName(){
     if(this.userName !== ''){
-      this.userName ='(John Doe)';
+      this.userName ='';
     }
   }
 
