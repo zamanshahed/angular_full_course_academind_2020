@@ -30,6 +30,8 @@
 <h4>
     Online Status: {{ allowNewServer }}
 </h4>
-<p>{{ serverCreationStatus }}</p> <p>{{ serverName }}</p>
+<!-- <p>{{ serverCreationStatus }}</p>  -->
+<p *ngIf="serverCreated"> Server is created, Server name: {{ serverName }}</p>
+
 <p>{{ userCreationStatus }}</p> <p>{{ userName }}</p>
 <app-server></app-server>
