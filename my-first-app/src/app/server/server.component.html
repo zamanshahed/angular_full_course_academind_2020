@@ -1,1 +1,5 @@
-<h3 [ngStyle]="{backgroundColor: getColor()}">{{ serverName }} with id: {{ serverId }}, Status: {{ getServerStatus() }}</h3>
+<h3 
+    [ngStyle]="{backgroundColor: getColor()}"
+    [ngClass]="{online: serverStatus === 'Online'}">
+        {{ serverName }} with id: {{ serverId }}, Status: {{ getServerStatus() }}
+</h3>

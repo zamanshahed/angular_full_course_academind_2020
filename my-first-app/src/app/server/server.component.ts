@@ -4,7 +4,12 @@ import { Component } from "@angular/core";
     //setting js objects or metadata that says what to do using this class
     selector:'app-server',
     templateUrl:'./server.component.html',
-    styleUrls:['./server.component.css']
+    // styleUrls:['./server.component.css'],
+    styles: [`
+        .online{
+            color: white;
+        }
+    `]
 })
 export class ServerComponent{
     serverName = 's1.shd-one.me';
