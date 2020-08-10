@@ -3,7 +3,7 @@
 <button class="btn btn-primary" (click)="onToggleDetails()"> Display Details </button>
 <p *ngIf = 'showSecret'>Secret Keyword: Tuna!</p>
 <div 
-    *ngFor = 'let logItems of log'
-    [ngStyle] = "{backgroundColor: logItems >= 5 ? 'blue': 'transparent'}"
-    [ngClass] = "{'white-text': logItems >=5 }"
+    *ngFor = 'let logItems of log; let i = index'
+    [ngStyle] = "{backgroundColor: i >= 5 ? 'blue': 'transparent'}"
+    [ngClass] = "{'white-text': i >=5 }"
 > {{ logItems }} </div>
